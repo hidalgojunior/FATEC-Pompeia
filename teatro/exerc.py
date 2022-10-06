@@ -1,3 +1,6 @@
+
+
+
 import numpy
 
 opcao = 9
@@ -77,6 +80,7 @@ while opcao != 0:
                     escolha = input('A poltrona está reservada. Deseja realmente alterar para ocupada (s/n)?')
                     if escolha == 's' or escolha == 'S' :
                         teatro[l,c] = 'O'
+                        reservados -= 1
                         print('O valor a ser pago é ',ingresso*(70/100))
                         prTotal = prTotal + (ingresso * (70/100))
                         ocupados += 1
